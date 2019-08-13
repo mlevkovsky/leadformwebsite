@@ -5,7 +5,7 @@ Made with ❤️ by [@mlevkov](https://twitter.com/mlevkov) and [@traf](https://
 
 # Website for the [JavaScript Playbook](https://javascriptplaybook.com)
 
-##Uses
+## Uses
 1. HTML5
 2. SASS
 3. GULP
