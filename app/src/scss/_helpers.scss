@@ -1,0 +1,43 @@
+// Transitions
+$ease: all .4s cubic-bezier(0.8,0.04,0.4,1);
+$bouncy: all .4s cubic-bezier(0.4,2,0.68,1);
+$smooth: all .4s ease;
+
+// Border Radii
+$rounded-most: 12px;
+$rounded-more: 8px;
+$rounded: 4px;
+$circle: 50%;
+$pill: 100px;
+
+// Centering
+.flex-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.center {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%; top: 50%;
+}
+.center-y {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+}
+.center-x {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+}
+
+// Responsive Breakpoints
+$screen-mobile: 800px;
+$screen-tablet: 1000px;
+@media (max-width: $screen-mobile) { .hide-mobile { display: none !important; } }
+@media (max-width: $screen-tablet) { .hide-tablet { display: none !important; } }
+  

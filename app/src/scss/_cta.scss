@@ -1,0 +1,32 @@
+.cta {
+  background: $primary;
+  @extend .flex-center;
+  text-align: center;
+  position: relative;
+  height: 160px;
+  width: 100%;
+  h3 {
+    transition: $smooth;
+    color: $black;
+    margin: 0;
+  }
+  .icon {
+    transform: translate(-50%, -50%);
+    top: calc(50% + 40px);
+    pointer-events: none;
+    position: absolute;
+    color: $black;
+    opacity: 0;
+    left: 50%;
+  }
+  &:hover h3 {
+    transform: translateY(-40px);
+    pointer-events: none;
+    opacity: 0;
+  }
+  &:hover .icon {
+    pointer-events: all;
+    opacity: 1;
+    top: 50%;
+  }
+}

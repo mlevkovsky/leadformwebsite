@@ -1,0 +1,18 @@
+.list {
+    margin: 20px auto;
+}
+
+.list-item {
+    padding: 8px 0;
+    display: flex;
+}
+
+.list-icon,
+.list-text {
+    color: $black;
+}
+
+.list-text {
+    margin-left: 10px;
+    color: $black;
+}

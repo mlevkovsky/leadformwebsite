@@ -1,0 +1,18 @@
+<a href="#" class="cta">
+    <div class="wrapper">
+        <h3>Get notified when It's live</h3>
+        <i class="icon" data-feather="chevrons-up"></i>
+    </div>
+</a>
+
+<script>
+    $(function(){
+        // Back to top CTA
+        $('.cta').click(function(e){ 
+            e.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, 600); 
+            $('.form-input').focus();
+            return false; 
+        }); 
+    })
+</script>

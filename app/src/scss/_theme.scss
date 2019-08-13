@@ -1,0 +1,23 @@
+// Colors
+$black: #000;
+$white: #fff;
+$grey: #808c99;
+$primary: #f7df1e;
+$gradient: radial-gradient(50% 100%, #D2DBE3 0%, #A6B5C2 100%);
+
+// Fonts
+@font-face {
+    font-family: 'inter-regular';
+    src: url('../fonts/inter-regular.woff') format('woff'), url('../fonts/inter-regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'inter-bold';
+    src: url('../fonts/inter-bold.woff') format('woff'), url('../fonts/inter-bold.woff2') format('woff2');
+}
+$regular: 'inter-regular', sans-serif;
+$bold: 'inter-bold', sans-serif;
+
+// Highlight selection
+*::-webkit-selection { background-color: $black; color: $white; }
+*::-moz-selection { background-color: $black; color: $white; }
+*::selection { background-color: $black; color: $white; }

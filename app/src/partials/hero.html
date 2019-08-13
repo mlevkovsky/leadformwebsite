@@ -1,0 +1,25 @@
+<div class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">The ultimate JavaScript playbook</h1>
+        <h2 class="hero-subtitle">Learn how to write clean, robust, and scalable code</h2>
+        @@include('list.html')
+        @@include('form.html')
+    </div>
+    <i class="icon down" data-feather="chevrons-down"></i>
+</div>
+
+<script>
+    $(function(){
+        // Scale hero section on scroll
+        if($(window).width() < 800){
+        }
+        else {
+            $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+                $(".hero").css({
+                    transform: 'translate3d(0, +'+(scroll/100)+'%, 0) scale('+(100 - scroll/100)/100+')'
+                });
+            });
+        }
+    });
+</script>

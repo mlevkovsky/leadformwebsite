@@ -1,0 +1,94 @@
+.form-content {
+    position: relative;
+    max-width: 100%;
+    h3 { color: $black; }
+}
+
+.form {
+    box-shadow: 0 20px 40px rgba($black, 0.3);
+    border-radius: $rounded;
+    transition: $smooth;
+    margin: 30px 0 20px;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    height: 60px;
+    width: 360px;
+}
+
+.form-hide {
+    transform: translateY(40px);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.form-input,
+.form-submit {
+    color: $white;
+}
+
+.form-input {
+    color: $white !important;
+    padding: 0 0 1px 24px;
+    background: $black;
+    width: 76%;
+    @extend .p;
+}
+
+.form-submit {
+    transition: $smooth;
+    background: $black;
+    padding-top: 4px;
+    font-size: 24px;
+    cursor: pointer;
+    width: 24%;
+    .icon { color: $white; }
+    &:hover { padding-left: 8px; }
+    &:hover .icon { color: $primary; }
+}
+
+.hidden {
+    pointer-events: none;
+    position: absolute;
+    opacity: 0;
+}
+  
+::-webkit-input-placeholder { color: $grey; }
+:-ms-input-placeholder { color: $grey; }
+::-moz-placeholder { color: $grey; }
+:-moz-placeholder { color: $grey; }
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 40px $black inset !important;
+    box-shadow: 0 0 0 40px $black inset !important;
+    -webkit-text-fill-color: $white !important;
+}
+
+input::-webkit-selection { background-color: $white; color: $black; }
+input::-moz-selection { background-color: $white; color: $black; }
+input::selection { background-color: $white; color: $black; }
+
+.form-success {
+    transform: translateY(-40px);
+    pointer-events: none;
+    transition: $smooth;
+    position: absolute;
+    opacity: 0;
+    top: -40px;
+    p { margin-top: 10px; }
+}
+
+.form-success-show {
+    transform: translateY(40px);
+    pointer-events: all;
+    opacity: 1;
+}
+
+@media (max-width: $screen-mobile) {
+
+    .form-input {
+        font-size: 16px !important;
+    }
+  
+  }

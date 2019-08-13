@@ -1,0 +1,51 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar { display: none; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, li {
+  font-weight: normal;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+iframe, video, img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+input, textarea,
+select, button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  appearance: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+  border: none;
+  &:hover, &:active, &:focus { outline: none; }
+}

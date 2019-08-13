@@ -1,0 +1,31 @@
+<div class="form-content">
+    <div class="form-success">
+        <h3>Done!</h3>
+        <p>I'll be in touch! Join me on <a href="https://twitter.com/mlevkov" target="_blank">Twitter</a> for some coding tips.</p>
+    </div>
+    <form class="form" name="playbook" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input class="hidden" name="bot-field"/>
+        <input class="form-input" placeholder="Notify me when it's live" type="email" name="email" required/>
+        <button class="form-submit" type="submit"><i class="icon" data-feather="arrow-right"></i></button>
+    </form>
+</div>
+
+<script>
+    $(function(){
+        // Show success message on submit
+        $(".form").submit(function(e) {
+            e.preventDefault();
+            var $form = $(this);
+            $.post($form.attr("action"), $form.serialize()).then(function() {
+                $('.form').addClass('form-hide');
+                $('.form-success').addClass('form-success-show');
+            });
+        });
+        // Change placeholder text on focus
+        $('.form-input').focus(function() {
+            $(this).attr('placeholder', 'What\'s your email?')
+        }).blur(function() {
+            $(this).attr('placeholder', 'Notify me when it\'s live')
+        })
+    })
+</script>
